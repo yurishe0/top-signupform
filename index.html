@@ -17,46 +17,51 @@
                 <h2>yurishe</h2>
             </div>
         </div>
-        <div class="section-container">
-            <p>Want to hear more from your favorite band? New songs, albums, announcements - all in one place. It's all
-                within a hand's reach.</p>
-            <p>Join us now!</p>
-            <div class="form-container">
-                <form action="" method="post">
-                    <h1>Sign up</h1>
-                    <fieldset>
-                        <div class="input-container">
-                            <label for="fname">First name</label>
-                            <input type="text" name="" id="fname" name="fname">
+        <div class="section-wrapper">
+            <div class="section-container">
+                <div class="text-container">
+                    <p>Want to hear more from your favorite band? New songs, albums, announcements - all in one place. It's all
+                        within a hand's reach.</p>
+                    <p>Join us now!</p>
+                </div>
+                <div class="form-container">
+                    <form action="" method="post" id="signupform">
+                        <h1>Sign up</h1>
+                        <div class="input-grid">
+                            <div class="input-container">
+                                <label for="fname">First name</label>
+                                <input type="text" name="" id="fname" name="fname" min="2" max="24">
+                            </div>
+                            <div class="input-container">
+                                <label for="lname">Last name</label>
+                                <input type="text" name="" id="lname" name="lname" min="2" max="24">
+                            </div>
+                            <div class="input-container">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input-container">
+                                <label for="telephone">Phone number</label>
+                                <input type="tel" name="telephone" id="telephone" type="number" min="9" max="12">
+                            </div>
+                            <div class="input-container">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" min="8">
+                            </div>
+                            <div class="input-container">
+                                <label for="password-conf">Confirm password</label>
+                                <input type="password" name="password-conf" id="password-conf" min="8">
+                            </div>
                         </div>
-                        <div class="input-container">
-                            <label for="lname">Last name</label>
-                            <input type="text" name="" id="lname" name="lname">
-                        </div>
-                    </fieldset>
+                    </form>
+                </div>
 
-                    <fieldset>
-                        <div class="input-container">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="input-container">
-                            <label for="telephone">Phone number</label>
-                            <input type="tel" name="telephone" id="telephone">
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div class="input-container">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
-                        </div>
-                        <div class="input-container">
-                            <label for="password-conf">Confirm password</label>
-                            <input type="password" name="password-conf" id="password-conf">
-                        </div>
-                    </fieldset>
-                </form>
+                <div class="button-container">
+                    <input type="submit" value="Create Account" form="signupform">
+                    <p>
+                        Already have an account? <a href="">Log in</a>.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
